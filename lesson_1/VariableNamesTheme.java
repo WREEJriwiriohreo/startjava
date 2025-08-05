@@ -1,6 +1,12 @@
+import java.io.PrintStream;
+import java.io.UnsupportedEncodingException;
+
 public class VariableNamesTheme {
-    public static void main(String[] args) throws java.io.UnsupportedEncodingException {
-        System.setOut(new java.io.PrintStream(System.out, true, "UTF-8"));
+    public static void main(String[] args) throws UnsupportedEncodingException {
+        System.setOut(new PrintStream(System.out, true, "UTF-8"));
+        
+        // ... остальной код без изменений
+
 
         System.out.println("1. РАЗНЫЕ ПЕРЕМЕННЫЕ\n");
 
@@ -119,46 +125,46 @@ public class VariableNamesTheme {
         System.out.println("\n2. BOOLEAN-ПЕРЕМЕННЫЕ\n");
 
         // Сотни равны?
-        boolean isHundredsEqual = true;
-        System.out.println("Сотни равны? = " + isHundredsEqual);
+        boolean hasEqualHundreds = true;
+        System.out.println("Сотни равны = " + hasEqualHundreds);
 
         // Компьютер включён?
         boolean isComputerOn = false;
-        System.out.println("Компьютер включён? = " + isComputerOn);
+        System.out.println("Компьютер включён = " + isComputerOn);
 
         // Есть равные цифры?
         boolean hasEqualDigits = true;
-        System.out.println("Есть равные цифры? = " + hasEqualDigits);
+        System.out.println("Есть равные цифры = " + hasEqualDigits);
 
         // Служба создана?
         boolean isServiceCreated = true;
-        System.out.println("Служба создана? = " + isServiceCreated);
+        System.out.println("Служба создана = " + isServiceCreated);
 
         // Файл пустой?
         boolean isFileEmpty = false;
-        System.out.println("Файл пустой? = " + isFileEmpty);
+        System.out.println("Файл пустой = " + isFileEmpty);
 
-        // Соединение активное?
+        // Соединение активно?
         boolean isConnectionActive = true;
-        System.out.println("Соединение активное? = " + isConnectionActive);
+        System.out.println("Соединение активно = " + isConnectionActive);
 
         // Новый?
         boolean isNew = false;
-        System.out.println("Новый? = " + isNew);
+        System.out.println("Новый = " + isNew);
 
         // Электронная почта действительная?
         boolean isEmailValid = true;
-        System.out.println("Электронная почта действительная? = " + isEmailValid);
+        System.out.println("Электронная почта действительная = " + isEmailValid);
 
         // Имеются уникальные строки?
         boolean hasUniqueStrings = false;
-        System.out.println("Имеются уникальные строки? = " + hasUniqueStrings);
+        System.out.println("Имеются уникальные строки = " + hasUniqueStrings);
 
-        System.out.println("\n3. АББРЕВЕАТУРЫ\n");
+        System.out.println("\n3. АББРЕВИАТУРЫ\n");
 
         // Старый universally unique identifier
-        String oldUUID = "123e4567-e89b-12d3-a456-426614174000";
-        System.out.println("Старый UUID = " + oldUUID);
+        String oldUuid = "123e4567-e89b-12d3-a456-426614174000";
+        System.out.println("Старый UUID = " + oldUuid);
 
         // Производитель оперативной памяти
         String ramManufacturer = "Kingston";
@@ -173,12 +179,12 @@ public class VariableNamesTheme {
         System.out.println("Определение HTTP = " + httpDefinition);
 
         // Сокращённый URL
-        String shortURL = "bit.ly/java";
-        System.out.println("Сокращённый URL = " + shortURL);
+        String shortUrl = "bit.ly/java";
+        System.out.println("Сокращённый URL = " + shortUrl);
 
         // Новый идентификатор клиента
-        String newClientID = "cli-90345";
-        System.out.println("Новый идентификатор клиента = " + newClientID);
+        String newClientId = "cli-90345";
+        System.out.println("Новый идентификатор клиента = " + newClientId);
 
         // Количество символов в ASCII
         int asciiCharCount = 128;
