@@ -3,10 +3,7 @@ import java.io.UnsupportedEncodingException;
 
 public class VariableNamesTheme {
     public static void main(String[] args) throws UnsupportedEncodingException {
-        System.setOut(new PrintStream(System.out, true, "UTF-8"));
-        
-        // ... остальной код без изменений
-
+        System.setOut(new PrintStream(System.out, true, "UTF-8"));        
 
         System.out.println("1. РАЗНЫЕ ПЕРЕМЕННЫЕ\n");
 

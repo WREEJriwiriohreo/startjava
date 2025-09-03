@@ -6,8 +6,8 @@ public class VariablesTheme {
     public static void main(String[] args) throws java.io.UnsupportedEncodingException {
         System.setOut(new java.io.PrintStream(System.out, true, "UTF-8"));
 
-        long startNanoTime = System.nanoTime();
-        LocalTime startClockTime = LocalTime.now();
+        final long startNanoTime = System.nanoTime();
+        final LocalTime startClockTime = LocalTime.now();
 
         // 1. ВЫВОД ASCII-ГРАФИКИ
         System.out.println("1. ВЫВОД ASCII-ГРАФИКИ\n");
@@ -17,15 +17,13 @@ public class VariablesTheme {
         System.out.println("|J  J  aaaaa  V V  /      \\");
         System.out.println("| JJ  a     a  V  /___/\\___\\\n");
 
-
         String block = """
-        |         /\\            
-        |   J    /  \\  v     v  a
-        |   J   /_( )\\  v   v  a a
-        |J  J  /      \\  V V  aaaaa
-        | JJ  /___/\\___\\  V  a     a
-        """;
-
+                |         /\\            
+                |   J    /  \\  v     v  a
+                |   J   /_( )\\  v   v  a a
+                |J  J  /      \\  V V  aaaaa
+                | JJ  /___/\\___\\  V  a     a
+                """;
         System.out.println(block);
 
         // 2. РАСЧЕТ СТОИМОСТИ ТОВАРА
